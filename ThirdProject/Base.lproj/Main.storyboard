@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirdProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5w8-t3-InS">
+                                <rect key="frame" x="160" y="200" width="70" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="lD2-Pq-TAl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Temperture in Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULm-OD-03W">
+                                <rect key="frame" x="90" y="131" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jn-6b-P7w">
+                                <rect key="frame" x="1" y="364" width="105" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fahrenheit"/>
+                                <connections>
+                                    <action selector="fahrenhiet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDL-Qs-KNF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fne-94-UlO">
+                                <rect key="frame" x="291" y="363" width="70" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kelvin"/>
+                                <connections>
+                                    <action selector="kelvinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hw-Gz-4LZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-uY-Gbg">
+                                <rect key="frame" x="130" y="496" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fne-94-UlO" firstAttribute="top" secondItem="ULm-OD-03W" secondAttribute="bottom" constant="211" id="6y3-QL-WZ2"/>
+                            <constraint firstItem="Dtk-uY-Gbg" firstAttribute="top" secondItem="5w8-t3-InS" secondAttribute="bottom" constant="262" id="7Jp-lU-kW2"/>
+                            <constraint firstItem="ULm-OD-03W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ep-pM-szf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fne-94-UlO" secondAttribute="bottom" constant="412" id="DTq-Na-owa"/>
+                            <constraint firstItem="fne-94-UlO" firstAttribute="leading" secondItem="0Jn-6b-P7w" secondAttribute="trailing" constant="185" id="JRF-iq-vWP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dtk-uY-Gbg" secondAttribute="trailing" constant="130" id="LOh-Ek-iXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5w8-t3-InS" secondAttribute="bottom" constant="576" id="OBd-22-7B3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dtk-uY-Gbg" secondAttribute="bottom" constant="293" id="SvM-4p-PpK"/>
+                            <constraint firstItem="fne-94-UlO" firstAttribute="leading" secondItem="0Jn-6b-P7w" secondAttribute="trailing" constant="185" id="Wjt-4q-Rqg"/>
+                            <constraint firstItem="ULm-OD-03W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="bzF-N0-6dO"/>
+                            <constraint firstItem="5w8-t3-InS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5H-Nj-wCa"/>
+                            <constraint firstItem="5w8-t3-InS" firstAttribute="top" secondItem="ULm-OD-03W" secondAttribute="bottom" constant="48" id="civ-IW-2Ax"/>
+                            <constraint firstItem="0Jn-6b-P7w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="dwF-Gk-pNs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fne-94-UlO" secondAttribute="trailing" constant="29" id="e2k-bT-mLD"/>
+                            <constraint firstItem="0Jn-6b-P7w" firstAttribute="top" secondItem="ULm-OD-03W" secondAttribute="bottom" constant="212" id="fAe-Zf-YLa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Jn-6b-P7w" secondAttribute="bottom" constant="411" id="gKr-Pt-L50"/>
+                            <constraint firstItem="Dtk-uY-Gbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="jyg-WJ-5Jp"/>
+                            <constraint firstItem="Dtk-uY-Gbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kah-BL-CXN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lebal" destination="Dtk-uY-Gbg" id="6L0-Je-bIH"/>
+                        <outlet property="textfield" destination="5w8-t3-InS" id="pf3-Nb-AqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.769230769230766" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+</document>
